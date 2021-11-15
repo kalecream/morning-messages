@@ -57,12 +57,6 @@ Sabrina
 
 Contributions are welcomed! If you plan to contribute:
 
-`pip3 install virtualenv`
-to install a virtual environment.
-
-`vitualenv venv`
-to enter the virtual environment
-
 `pip3 install -r requirements.txt`
 to install all packages
 
