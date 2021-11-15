@@ -14,7 +14,7 @@ OR
 
 2. Install `geopy.geocoders, Nominatim, Pywhatkit` and `Dotenv`
 
-3. Change the phone number, city and country in the environment file.
+3. Change the variables in the environment file.
 
 ```txt
 NUMBER=+18881234567
@@ -30,7 +30,7 @@ RSS_URL=https://jamaica-gleaner.com/feed/rss.xml
 ```txt
 ⋆༶❀.⋆｡⋆༶˙⊹ .⋆. ｡⋆༶⋆˙⊹❀⋆｡⋆༶⋆˙⊹
 
-Couldn’t wait to text you good morning! Have a lovely day, babe. Today is Monday, November 11, 2021 and it's another day full of potential to give life some meaning. Night falls at 05:30 PM which gives you plenty of time!
+Couldn’t wait to text you good morning! Have a lovely day, babe. Today is Monday, November 15, 2021 and it's another day full of potential to give life some meaning. Night falls at 05:30 PM which gives you plenty of time!
 
 ♡ Weather Report ♡
 
@@ -60,7 +60,7 @@ Contributions are welcomed! If you plan to contribute:
 `pip3 install virtualenv`
 to install a virtual environment.
 
-`vitualenv messages`
+`vitualenv venv`
 to enter the virtual environment
 
 `pip3 install -r requirements.txt`
