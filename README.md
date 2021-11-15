@@ -1,6 +1,6 @@
 # Morning Messages
 
-A simple python script to send cute messages to my boyfriend. It gives him the weather, news 
+A simple python script to send cute messages to my boyfriend. It gives him the weather and news currently.
 
 ## Installation
 
@@ -8,11 +8,11 @@ A simple python script to send cute messages to my boyfriend. It gives him the w
 to get this repository
 
 2. `pip3 install -r requirements.txt`
-to install packages (I need to clean up this file currently. It has some extra packages)
+to install packages
 
 OR
 
-Install geopy.geocoders, Nominatim, pywhatkit and dotenv
+2. Install `geopy.geocoders, Nominatim, Pywhatkit` and `Dotenv`
 
 3. Change the phone number, city and country in the environment file.
 
@@ -24,7 +24,7 @@ OPEN_WEATHER_API=73u589ghhkdty65
 NAME=SABRINA
 RSS_URL=https://jamaica-gleaner.com/feed/rss.xml
 ```
-
+**This script works via Whatsapp Web and is designed to wait 15 seconds for the tab to load before pasting and sending the message.** You can reduce this time if you have faster internet or incease it for slower connections. PyWhatKit makes a txt file with your previous sent messages so you'll have a record of it.
 ## Example Output
 
 ```txt
