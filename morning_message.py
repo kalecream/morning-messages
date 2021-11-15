@@ -1,5 +1,5 @@
 import pywhatkit, random
-NUMBER = "18881234567"
+NUMBER = "+18881234567"
 
 
 content = [
@@ -16,8 +16,6 @@ header = [
     "♡︶꒦꒷♡꒷꒦︶♡",
     " ⋆୨୧ ₊ﾟ🥡🥢 ⊹ɞ ",
     "🦋☆*: .｡. ♡ .｡.:*☆🦋",
-    "o/(｡•ᆺ•｡)\o",
-    "≪•◦ ❈ ◦•≫",
     "(っ◔◡◔)っ💝",
     "(✿◠‿◠)ッ 🐻🌻",
     "˖˵˵˵˵˵˵ଘ( ꈍᴗꈍ)⋆🌷"]
@@ -37,4 +35,4 @@ kaomoji = [
 msg = random.choice(header) + "\n\n" + random.choice(content) + "\n\n" + random.choice(kaomoji) + "\n\n"
 print(msg)
 
-pywhatkit.sendwhatmsg_instantly(NUMBER,msg,20,False)
+#pywhatkit.sendwhatmsg_instantly(NUMBER,msg,20,False)
