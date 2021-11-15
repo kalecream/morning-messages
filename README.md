@@ -51,3 +51,5 @@ to install all packages
 ---
 
 Please run `pip3 freeze > requirements.txt` before uploading if you've installed any extra dependencies!
+
+#todo clear my environment of packages
