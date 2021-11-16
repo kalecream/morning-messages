@@ -16,6 +16,8 @@ OR
 
 3. Change the variables in the environment file.
 
+4. Follow the steps in this article to [add the file to Windows Scheduler](https://www.jcchouinard.com/python-automation-using-task-scheduler/)
+
 ```txt
 NUMBER=+18881234567
 CITY=KINGSTON
@@ -56,10 +58,5 @@ Sabrina
 ## Contributions
 
 Contributions are welcomed! If you plan to contribute:
-
-`pip3 install -r requirements.txt`
-to install all packages
-
----
 
 Please run `pip3 freeze > requirements.txt` before uploading if you've installed any extra dependencies!
