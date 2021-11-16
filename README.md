@@ -30,24 +30,26 @@ RSS_URL=https://jamaica-gleaner.com/feed/rss.xml
 ## Example Output
 
 ```txt
-⋆༶❀.⋆｡⋆༶˙⊹ .⋆. ｡⋆༶⋆˙⊹❀⋆｡⋆༶⋆˙⊹
+✧･ﾟ: *✧･ﾟ:* 　　 *:･ﾟ✧*:･ﾟ✧
 
-Couldn’t wait to text you good morning! Have a lovely day, babe. Today is Monday, November 15, 2021 and it's another day full of potential to give life some meaning. Night falls at 05:30 PM which gives you plenty of time!
+I love how you bring the best of me whenever I am with you. Thank you for making my life a lot easier. Good morning, sunshine. Today is Tuesday, 16 November, 2021 and it's another day full of potential to give life some meaning. Night falls at 05:30 PM which gives you plenty of time to get things done!
 
 ♡ Weather Report ♡
 
-The temperature today will be 31°C, but it feels like 36°C. The main thing for today in weather is Rain and they say there will be light rain. The sun is also pelting us. At a UV index of 7.4: Number below zero or missing data.
+The temperature today will be 31°C, but it feels like 33°C. The main thing for today 
+in weather is Rain and they say there will be light rain. The sun is also pelting us 
+at a UV index of 8.3 so extra protection needed. Be careful outside, especially during late morning through mid-afternoon. If your shadow is shorter than you, seek shade and wear protective clothing, a wide-brimmed hat, and sunglasses, and generously apply a minimum of  SPF-15, broad-spectrum sunscreen on exposed skin.
 
 ♡ Latest News Report ♡
 
-EMERGENCY!
-While staunchly defending the reimposition of states of emergency (SOEs) on Sunday, a combative Prime Minister Andrew Holness argued that his administration would not stand by and do nothing in the face of a tidal wave of deadly crime. In...
+**‘Everyone knows I’m a snitch’**
+A Jamaican man who was a state witness in a high-profile gang trial has got himself in trouble with the law in the territory to which he was dispatched under the Government’s witness protection programme but claims he is being shunned by local...
 
-Betrayal, bloodshed traumatise victims years later
-COMFORT, Manchester: Her reconstructed arm with 13 pins and a hand with three missing fingers are the macabre reminders of the hellish ordeal 69-year-old Deslyn Gordon survived 10 years ago in Comfort at the hands of man who tried to kill her and...
+**Former conductor awarded millions for injuries after JUTC driver hits pothole**
+THE SUPREME Court has ruled that the state-owned bus entity Jamaica Urban Transit Company (JUTC) should pay more than J$18 million to former conductor Joy Murray for injuries suffered on the job in 2002. Murray’s lawyer, Andrea Walter-Isaacs, told...
 
-Pre-emptive strike
-Amid a pending ruling on the constitutionality of specific detentions under states of emergency (SOE), the Government insisted Sunday that it has the power to hold persons without preferring charges as a pre-emptive mechanism to prevent crime. The...
+**Lawyer questions witness’ claim of don status**
+The ex-crony of the One Don Gang testified on Monday that one of the 33 alleged members of the gang now on trial had told him that he had murdered a policeman in Portmore, St Catherine, but faced withering cross-examination questioning the...
 
 Love Always,
 Sabrina
