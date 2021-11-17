@@ -30,9 +30,9 @@ uv_index = weather_data["daily"][datetime.today().weekday()]["uvi"]
 if uv_index <=2:
     uv_info = "no protection is needed. You can safely stay outside using minimal sun protection."
 elif uv_index <= 7 and uv_index >= 3:
-    uv_info = "protection is needed. Seek shade during late morning through mid-afternoon. When outside, generously apply broad-spectrum SPF-15 or higher sunscreen on exposed skin, and wear protective clothing, a wide-brimmed hat, and sunglasses."
+    uv_info = "protection is needed. Seek shade during late morning through mid-afternoon. When outside, generously apply broad-spectrum SPF-15 or higher sunscreen on exposed skin, and wear a wide-brimmed hat, and sunglasses."
 elif uv_index >= 8:
-    uv_info = "extra protection is needed. Be careful outside, especially during late morning through mid-afternoon. If your shadow is shorter than you, seek shade and wear protective clothing, a wide-brimmed hat, and sunglasses, and generously apply a minimum of  SPF-15, broad-spectrum sunscreen on exposed skin."
+    uv_info = "extra protection is needed. Be careful outside, especially during late morning through mid-afternoon. If your shadow is shorter than you, seek shade and wear a wide-brimmed hat, and sunglasses, and generously apply a minimum of  SPF-15, broad-spectrum sunscreen on exposed skin."
 
 # Get news articles from RSS feed. I chose one because the message was already too long.
 news_df = rss.get_feed(secret["RSS_URL"])
@@ -41,7 +41,7 @@ news_df = news_df.drop(columns=['pubDate', 'guid']).iloc[:3]
 if weather_api.status_code != 200:
     weather = "\n\n" + "♡ Weather Report ♡\n\n" + "Not retrieved. \n\n"
 else:
-    weather = "\n\n" + "♡ Weather Report ♡\n\n" + "The temperature today will be " + str(round(temperature)) + "°C, but feels like " + str(round(feels_like)) + "°C. For today in weather, " +  main_weather + " : " + weather_report + ". The sun is also pelting us at a UV index of " + str(uv_index) + " so " + uv_info
+    weather = "\n\n" + "♡ Weather Report ♡\n\n" + "The temperature today will be " + str(round(temperature)) + "°C, but feels like " + str(round(feels_like)) + "°C. For today in weather, " +  main_weather + " : " + weather_report + ". The sun is at a UV index of " + str(uv_index) + " so " + uv_info
 
 greeting = random.choice(kaomoji.header) + "\n\n" + random.choice(messages.content) + " Today is " + today + "and it's another day full of potential to give life some meaning. Night falls at " + sunset + " which gives you plenty of time to get things done!"
 
