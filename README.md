@@ -15,9 +15,6 @@ OR
 2. Install `geopy.geocoders, Nominatim, Pywhatkit` and `Dotenv`
 
 3. Change the variables in the environment file.
-
-4. Follow the steps in this article to [add the file to Windows Scheduler](https://www.jcchouinard.com/python-automation-using-task-scheduler/)
-
 ```txt
 NUMBER=+18881234567
 CITY=KINGSTON
@@ -26,6 +23,9 @@ OPEN_WEATHER_API=73u589ghhkdty65
 NAME=SABRINA
 RSS_URL=https://jamaica-gleaner.com/feed/rss.xml
 ```
+
+4. Follow the steps in this article to [add the file to Windows Scheduler](https://www.jcchouinard.com/python-automation-using-task-scheduler/)
+
 **This script works via Whatsapp Web and is designed to wait 15 seconds for the tab to load before pasting and sending the message.** You can reduce this time if you have faster internet or incease it for slower connections. PyWhatKit makes a txt file with your previous sent messages so you'll have a record of it.
 ## Example Output
 
