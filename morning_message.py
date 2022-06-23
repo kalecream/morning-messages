@@ -1,3 +1,4 @@
+# https://pypi.org/project/pywhatkit/
 import pywhatkit, random, requests
 from geopy.geocoders import Nominatim
 from dotenv import dotenv_values
@@ -10,11 +11,12 @@ today = datetime.today().strftime("%A, %d %B, %Y ")
 
 # Get weather information using latitude and longitude
 geolocator = Nominatim(user_agent="morning_message")
-location = geolocator.geocode(secret["CITY_NAME"] + "," + secret["COUNTRY_NAME"])
+location = geolocator.geocode(secret["CITY"] + "," + secret["COUNTRY"])
 
 try:
     weather_api = requests.get("https://api.openweathermap.org/data/2.5/onecall?lat="+str(location.latitude)+"&lon="+str(location.longitude)+"&exclude=minutely,hourly&units=metric&appid="+secret["OPEN_WEATHER_API"])
     weather_api.raise_for_status()
+    print(weather_api.raise_for_status)
 except weather_api.exceptions.HTTPError as error:
     print(error)
 
@@ -27,14 +29,12 @@ main_weather = weather_data["daily"][datetime.today().weekday()]["weather"][0]["
 weather_report = weather_data["daily"][datetime.today().weekday()]["weather"][0]["description"]
 uv_index = weather_data["daily"][datetime.today().weekday()]["uvi"]
 
-if uv_index <=2:
-    uv_info = "no protection is needed. You can safely stay outside using minimal sun protection."
-elif uv_index <= 7 and uv_index >= 3:
-    uv_info = "protection is needed. Seek shade during late morning through mid-afternoon. When outside, generously apply broad-spectrum SPF-15 or higher sunscreen on exposed skin, and wear a wide-brimmed hat, and sunglasses."
-elif uv_index >= 8:
-    uv_info = "extra protection is needed. Be careful outside, especially during late morning through mid-afternoon. If your shadow is shorter than you, seek shade and wear a wide-brimmed hat, and sunglasses, and generously apply a minimum of  SPF-15, broad-spectrum sunscreen on exposed skin."
+uv_info = "minimal protection is needed."
 
-# Get news articles from RSS feed. I chose one because the message was already too long.
+if uv_index >= 3:
+    uv_info = "Be careful outside, especially during 10am - 3pm."
+
+# Get news articles from local RSS feed. I chose one because the message was already too long.
 news_df = rss.get_feed(secret["RSS_URL"])
 news_df = news_df.drop(columns=['pubDate', 'guid']).iloc[:3]
 
@@ -55,5 +55,8 @@ except TypeError:
 msg = greeting + weather + news + ending
 print(msg)
 
-pywhatkit.sendwhatmsg_instantly(secret["NUMBER"],msg,15,False)
+pywhatkit.sendwhatmsg_instantly(secret["NUMBER"],msg,6,30)
+
+# the below sends the message in 15 seconds and then closes the web browser/
+# pywhatkit.sendwhatmsg_instantly(secret["NUMBER"],msg,15,False)
 #pywhatkit.sendwhats_image(secret["NUMBER"], "/resources/img/cat1.png", msg)
