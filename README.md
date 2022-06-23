@@ -17,11 +17,11 @@ OR
 3. Change the variables in the environment file.
 ```txt
 NUMBER=+18881234567
-CITY=KINGSTON
-COUNTRY=JAMAICA
-OPEN_WEATHER_API=73u589ghhkdty65
-NAME=SABRINA
-RSS_URL=https://jamaica-gleaner.com/feed/rss.xml
+CITY=
+COUNTRY=
+OPEN_WEATHER_API=
+NAME=S
+RSS_URL=
 ```
 
 4. Follow the steps in this article to [add the file to Windows Scheduler](https://www.jcchouinard.com/python-automation-using-task-scheduler/)
