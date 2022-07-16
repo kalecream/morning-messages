@@ -20,6 +20,7 @@ NAME=S
 RSS_URL=
 ```
 
+4. Run the script in /resources/cron.py when you are satisfied with your edits of the .env and morning_message.py
 
 ## Example Output
 
