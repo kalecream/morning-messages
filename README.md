@@ -1,18 +1,14 @@
 # Morning Messages
 
-A simple python script to send cute messages to my boyfriend. It gives him the weather and news currently.
+A simple python script to send cute messages to my boyfriend. See below for a sample output.
 
 ## Installation
 
-1. `git clone https://github.com/kalecream/morning-messages.git`
+ 1. `git clone https://github.com/kalecream/morning-messages.git`
 to get this repository
 
 2. `pip3 install -r requirements.txt`
 to install packages
-
-OR
-
-2. Install `geopy.geocoders, Nominatim, Pywhatkit` and `Dotenv`
 
 3. Change the variables in the environment file.
 ```txt
@@ -24,10 +20,10 @@ NAME=S
 RSS_URL=
 ```
 
-4. Follow the steps in this article to [add the file to Windows Scheduler](https://www.jcchouinard.com/python-automation-using-task-scheduler/)
+
+## Example Output
 
 **This script works via Whatsapp Web and is designed to wait 15 seconds for the tab to load before pasting and sending the message.** You can reduce this time if you have faster internet or incease it for slower connections. PyWhatKit makes a txt file with your previous sent messages so you'll have a record of it.
-## Example Output
 
 ```txt
 ✧･ﾟ: *✧･ﾟ:* 　　 *:･ﾟ✧*:･ﾟ✧
@@ -38,7 +34,7 @@ I love how you bring the best of me whenever I am with you. Thank you for making
 
 The temperature today will be 31°C, but it feels like 33°C. The main thing for today 
 in weather is Rain and they say there will be light rain. The sun is also pelting us 
-at a UV index of 8.3 so extra protection needed. Be careful outside, especially during late morning through mid-afternoon. If your shadow is shorter than you, seek shade and wear protective clothing, a wide-brimmed hat, and sunglasses, and generously apply a minimum of  SPF-15, broad-spectrum sunscreen on exposed skin.
+at a UV index of 8.3 so extra protection needed.
 
 ♡ Latest News Report ♡
 
@@ -52,7 +48,7 @@ THE SUPREME Court has ruled that the state-owned bus entity Jamaica Urban Transi
 The ex-crony of the One Don Gang testified on Monday that one of the 33 alleged members of the gang now on trial had told him that he had murdered a policeman in Portmore, St Catherine, but faced withering cross-examination questioning the...
 
 Love Always,
-Sabrina
+Sab
 
 ଘ(੭ˊ꒳​ˋ)੭✧
 ```
@@ -61,4 +57,26 @@ Sabrina
 
 Contributions are welcomed! If you plan to contribute:
 
-Please run `pip3 freeze > requirements.txt` before uploading if you've installed any extra dependencies!
+Create a new virtual environment
+```py 
+python -m venv venv
+```
+
+```activate virtual environment
+source venv/bin/activate
+```
+
+Installing new packages
+```py
+python -m pip install <package-name>
+```
+
+Run before uploading if you've installed any extra dependencies!
+```py 
+pip3 freeze > requirements.txt
+```
+
+Deactivate the virtual environment
+```py
+deactivate
+```
