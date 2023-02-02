@@ -55,7 +55,7 @@ except TypeError:
 msg = greeting + weather + news + ending
 print(msg)
 
-pywhatkit.sendwhatmsg_instantly(secret["NUMBER"],msg,6,30)
+# pywhatkit.sendwhatmsg_instantly(secret["NUMBER"],msg,6,30)
 
 # the below sends the message in 15 seconds and then closes the web browser/
 # pywhatkit.sendwhatmsg_instantly(secret["NUMBER"],msg,15,False)
